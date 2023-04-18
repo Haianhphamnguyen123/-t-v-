@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sach chuyen bay</title>
+    <link href="{{ url_for('static' , filename='css/style.css')}}" rel="stylesheet" />
+</head>
+<body>
+  <h1 class="subject"> DANH SACH CHUYEN BAY</h1>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>Ten hang may bay</th>
+            <th>Diem di Diem den</th>
+            <th>Gia ve</th>
+        </tr>
+
+            <td></td>
+            <td>{{ p.id }}</td>
+            <td>{{ p.name }}</td>
+            <td>{{ p.description }}</td>
+            <td>{{ p.price }} VND</td>
+        </tr>
+
+    </table>
+</body>
+</html>
